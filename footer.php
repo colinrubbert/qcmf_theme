@@ -40,6 +40,9 @@
 		<!-- JS Scripts & CDN -->
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-object-fit.js" type="text/javascript"></script>
+		<?php if ( is_page('gallery')): ?>
+			<script src="<?php bloginfo('template_directory'); ?>/js/lightbox.js" type="text/javascript"></script>
+		<?php endif; ?>
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js" type="text/javascript"></script>
 		<?php if ( is_page('home')): ?>
 			<script async defer

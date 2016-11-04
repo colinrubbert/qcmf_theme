@@ -359,6 +359,10 @@ em, .text-italic {
   text-align: center;
 }
 
+.top-section {
+	margin-top: 80px;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -584,7 +588,6 @@ select {
 }
 
 #hero {
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;

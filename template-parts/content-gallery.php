@@ -1,5 +1,5 @@
 <!-- Start Gallery Section -->
-<section id="gallery">
+<section id="gallery" class="top-section">
   <div class="title gallery-title"><span>Gallery</span></div>
   <div class="gallery-wrapper">
     <div class="gallery-album-switcher" id="gallery-album-switcher">
