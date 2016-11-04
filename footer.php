@@ -9,6 +9,9 @@
  * @package QCMF_Theme
  */
 
+ 	// Advanced Custom Fields
+	$google_maps_api_key					= get_field(google_maps_api_key);
+
 ?>
 
 <?php wp_footer(); ?>
@@ -24,7 +27,7 @@
 				</div>
 				<div class="copyright-wrapper">
 					<div class="copyright">
-						<span>&copy; 2016</span> Quality Custom Metal Fabrication
+						<span>&copy; <?php echo date('Y'); ?></span> Quality Custom Metal Fabrication
 					</div>
 					<div class="designed-by">
 						Website Designed &amp; Developed by <a href="http://tradewindsinteractive.com" target="_blank" >Tradewinds Interactive</a>
@@ -38,9 +41,11 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-object-fit.js" type="text/javascript"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js" type="text/javascript"></script>
-		<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbCR5NQVLrCqWWlx9e4l0SfS4-bJkA29Q&callback=initMap">
-		</script>
+		<?php if ( is_page('home')): ?>
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=<?php echo $google_maps_api_key ?>&callback=initMap">
+			</script>
+		<?php endif; ?>
 
 	</body>
 </html>

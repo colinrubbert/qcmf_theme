@@ -302,7 +302,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: Raleway, "Helvetica Nueue", Helvetica, sans-serif;
+  font-family: Lato, "Helvetica Nueue", Helvetica, sans-serif;
 }
 
 body, html, h1, h2, h3, h4, h5, h6, p,
@@ -492,6 +492,17 @@ select {
   justify-content: space-between;
 }
 
+.navigation-links-wrapper ul {
+  margin: 0;
+	padding: 0;
+  list-style: none;
+}
+
+.navigation-links-wrapper li {
+  text-decoration: none;
+  display: inline-flex;
+}
+
 .nav-link {
   text-decoration: none;
   color: #446CB3;
@@ -552,6 +563,10 @@ select {
     text-align: center;
     background: #fff;
     transition: all 600ms ease-in-out;
+  }
+	.navigation-links-wrapper li {
+    display: flex;
+    justify-content: center;
   }
   .navigation-mobile-toggle {
     display: block;

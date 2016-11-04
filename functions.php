@@ -152,3 +152,11 @@ function cc_mime_types($mime_types){
   return $mime_types;
 }
 add_filter('upload_mimes', 'cc_mime_types', 1, 1);
+
+/**
+	* Function to change remove 'ul's and instead use 'a' and add 'link' class to them for the navbar
+	*/
+function add_menuclass($ulclass) {
+   return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+}
+add_filter('wp_nav_menu','add_menuclass');

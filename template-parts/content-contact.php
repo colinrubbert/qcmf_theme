@@ -1,3 +1,13 @@
+<?php
+
+  // Advanced Custom Fields
+  $qcmf_email             = get_field(qcmf_email);
+  $qcmf_phone_number      = get_field(qcmf_phone_number);
+  $qcmf_street_address    = get_field(qcmf_street_address);
+  $qcmf_city_state_zip    = get_field(qcmf_city_state_zip);
+
+ ?>
+
 <!-- Start Contact Section -->
 <section id="contact">
   <div class="title contact-title"><span>Contact Us</span></div>
@@ -6,18 +16,18 @@
       <div class="contact-information">
         <div class="contact-address-wrapper">
           <i class="fa fa-map-marker"></i>
-          <div class="contact-address">1305 Constitution Dr. <br> Neenah, WI 54956</div>
+          <div class="contact-address"><?php echo $qcmf_street_address ?> <br> <?php echo $qcmf_city_state_zip ?></div>
         </div>
         <div class="contact-phone-wrapper">
           <i class="fa fa-phone"></i>
-          <a href="tel:920-725-4540" class="contact-phone-number">
-            920-725-4540
+          <a href="tel:<?php echo $qcmf_phone_number ?>" class="contact-phone-number">
+            <?php echo $qcmf_phone_number ?>
           </a>
         </div>
         <div class="contact-email-wrapper">
           <i class="fa fa-envelope"></i>
-          <a href="mailto:support@qcmf.com" class="contact-email">
-            support@qcmf.com
+          <a href="mailto:<?php echo $qcmf_email ?>" class="contact-email">
+            <?php echo $qcmf_email ?>
           </a>
         </div>
       </div>

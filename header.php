@@ -16,6 +16,7 @@
 		<meta HTTP-EQUIV="REFRESH" content="0; url=/ie-version.html">
 	<![endif]-->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- Google Fonts -->
@@ -41,12 +42,14 @@
 						Quality Custom <br> Metal Fabrication
 					</div>
 				</div>
-				<div class="navigation-links-wrapper closed" id="navigation-links-wrapper">
-					<a href="/" class="nav-link">Home</a>
-					<a href="/gallery.html" class="nav-link">Gallery</a>
-					<a href="/jobs.html" class="nav-link">Jobs</a>
-					<a href="/contact.html" class="nav-link">Contact</a>
-				</div>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' 	=>	'primary',
+						'container'				=>	'div',
+						'container_class'	=>	'navigation-links-wrapper closed',
+						'container_id'		=>	'navigation-links-wrapper'
+					) );
+				?>
 				<div class="navigation-mobile-toggle" id="navigation-mobile-toggle" onClick="toggleMenu()">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/menu.svg" alt="Mobile Navigation Menu Toggle" class="navigation-mobile-toggle-image">
 				</div>
