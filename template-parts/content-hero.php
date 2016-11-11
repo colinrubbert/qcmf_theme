@@ -14,7 +14,7 @@
       <?php echo $hero_subtitle ?>
     </h4>
     <div class="hero-button-wrapper">
-      <a href="/gallery.html" class="button primary-button">Gallery</a>
+      <a href="<?php echo get_permalink( (get_page_by_title('gallery')) ); ?>" class="button primary-button">Gallery</a>
       <a href="#contact" class="button secondary-button">Contact Us</a>
     </div>
   </div>

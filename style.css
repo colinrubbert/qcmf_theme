@@ -430,6 +430,7 @@ em, .text-italic {
   }
 }
 
+label,
 input,
 input[type="submit"],
 textarea,
@@ -449,6 +450,10 @@ textarea,
 select {
   border: none;
   border-radius: 3px;
+}
+
+input[type="date"] {
+	color: #a9a9a9;
 }
 
 #navigation {
@@ -1066,6 +1071,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 100%;
+	padding: 50px 0;
 }
 
 .jobs-wrapper {
@@ -1102,7 +1108,7 @@ select {
 }
 
 .jobs-form-group label {
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 .jobs-form-sub-header {
