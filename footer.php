@@ -44,7 +44,7 @@
 			<script src="<?php bloginfo('template_directory'); ?>/js/lightbox.js" type="text/javascript"></script>
 		<?php endif; ?>
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js" type="text/javascript"></script>
-		<?php if ( is_page('home')): ?>
+		<?php if ( is_page( array('home', 'contact'))): ?>
 			<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key=<?php echo $google_maps_api_key ?>&callback=initMap">
 			</script>

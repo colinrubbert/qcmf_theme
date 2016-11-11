@@ -9,7 +9,12 @@
  ?>
 
 <!-- Start Contact Section -->
-<section id="contact">
+<?php if ( is_page('contact')): ?>
+  <section id="contact" class="top-section">
+<?php else: ?>
+  <section id="contact">
+<?php endif; ?>
+
   <div class="title contact-title"><span>Contact Us</span></div>
   <div class="contact-wrapper">
     <div class="contact-content-wrapper">
