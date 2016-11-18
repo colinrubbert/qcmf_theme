@@ -9,11 +9,13 @@
  * @package QCMF_Theme
  */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<!--[if IE ]>
-		<meta HTTP-EQUIV="REFRESH" content="0; url=/ie-version.html">
+		<meta HTTP-EQUIV="REFRESH" content="0; url=/ie">
 	<![endif]-->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-compatible" content="IE=edge">

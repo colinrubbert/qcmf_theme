@@ -1534,6 +1534,10 @@ body.lb-disable-scrolling {
   font-family: sans-serif;
 }
 
+#ie #navigation {
+	display: none;
+}
+
 /*  Warning Box Section  */
 
 .warning-box {
