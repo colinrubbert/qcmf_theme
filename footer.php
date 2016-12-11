@@ -11,6 +11,7 @@
 
  	// Advanced Custom Fields
 	$google_maps_api_key					= get_field(google_maps_api_key);
+	$google_analytics							= get_field(google_analytics);
 
 ?>
 
@@ -38,6 +39,7 @@
 		<!-- End Footer Section -->
 
 		<!-- JS Scripts & CDN -->
+		<?php echo $google_analytics ?>
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-object-fit.js" type="text/javascript"></script>
 		<?php if ( is_page('gallery')): ?>
