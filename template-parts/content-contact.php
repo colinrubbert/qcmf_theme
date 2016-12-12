@@ -45,15 +45,15 @@
       <div class="contact-form-title">
         <h3>Get In Touch</h3>
       </div>
-      <form action="" class="contact-form">
+      <form action="https://api.formbucket.com/f/buk_kRDFn1GDLxxj2QIMUa9RLxqi" method="post" target="_blank" class="contact-form">
         <div class="contact-form-group">
-          <input type="text" id="contact-form-name" class="contact-form-name" placeholder="Name">
+          <input type="text" name="name" id="contact-form-name" class="contact-form-name" placeholder="Name">
         </div>
         <div class="contact-form-group">
-          <input type="text" id="contact-form-information" class="contact-form-information" placeholder="Email">
+          <input type="text" name="email" id="contact-form-information" class="contact-form-information" placeholder="Email">
         </div>
         <div class="contact-form-group">
-          <textarea id="contact-form-message" class="contact-form-message" rows="3" placeholder="Message"></textarea>
+          <textarea id="contact-form-message" name="message" class="contact-form-message" rows="3" placeholder="Message"></textarea>
         </div>
         <div class="contact-form-group contact-form-group-submit">
           <input type="submit" class="button secondary-button contact-form-submit" value="Submit">
